@@ -5,7 +5,7 @@ const App = {
       subtitle: "Что нужно купить?",
       inputPlaceholder: "Например, Тунец",
       inputValue: "",
-      products: ["Пекинская капуста", "Огурцы", "Стебли сельдерея"],
+      products: [],
     };
   },
   methods: {
