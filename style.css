@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  background: #feb692;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 50px auto;
+  padding: 30px 50px;
+}
+.card_title {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+.card_subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.form {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.card_input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.card_btn {
+  border: 2px solid #ea5455;
+  border-radius: 20px;
+  background: #ea5455;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #fff;
+}
+.card_btn:hover {
+  background: #fff;
+  color: #ea5455;
+  transition: background-color 0.5s linear;
+  transition: color 0.5s linear;
+}
+.card_list {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+.card_list-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.card_list-item:first-child {
+  margin-top: 0;
+}
+.item_text {
+  font-size: 20px;
+}
+.item_btn {
+  border: 2px solid #ea5455;
+  border-radius: 20px;
+  background: #ea5455;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #fff;
+}
+.item_btn:hover {
+  background: #fff;
+  color: #ea5455;
+  transition: background-color 0.5s linear;
+  transition: color 0.5s linear;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin: 50px auto;
+    padding: 20px 25px;
+  }
+  .card_title {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .card_subtitle {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .form {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .card_input {
+   margin-bottom: 8px;
+  }
+  .card_btn {
+    width: 100%;
+    font-size: 16px;
+  }
+  .item_text {
+    font-size: 16px;
+  }
+}

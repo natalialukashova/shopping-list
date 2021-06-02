@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Список покупок</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="card">
+        <h1 class="card_title">{{ title }}</h1>
+        <h3 class="card_subtitle">{{ subtitle }}</h3>
+        <div class="form">
+          <input
+            type="text"
+            class="card_input"
+            :placeholder="inputPlaceholder"
+            v-model="inputValue"
+            @keypress.enter="addNewProduct"
+          />
+          <button class="card_btn" @click="addNewProduct">Добавить</button>
+        </div>
+        <hr />
+        <ul 
+        class="card_list" 
+        v-if="products.length !== 0"
+        >
+          <li class="card_list-item" 
+          v-for="(product, idx) in products"
+          >
+            <p class="item_text">{{ product }}</p>
+            <button 
+            class="item_btn" @click="deleteProduct"
+            >Удалить</button>
+          </li>
+        </ul>
+        <h3 class="card_subtitle" v-else>Список покупок пуст.</h3>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
